@@ -1,0 +1,12 @@
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\bin\Debug\net6.0\AzureFunctionApps.Shared.Validation.deps.json
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\bin\Debug\net6.0\AzureFunctionApps.Shared.Validation.dll
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\bin\Debug\net6.0\AzureFunctionApps.Shared.Validation.pdb
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.csproj.AssemblyReference.cache
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.AssemblyInfoInputs.cache
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.AssemblyInfo.cs
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.csproj.CoreCompileInputs.cache
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.dll
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\refint\AzureFunctionApps.Shared.Validation.dll
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\AzureFunctionApps.Shared.Validation.pdb
+C:\Users\kvmo\Downloads\Code\my_projects\azure\AzureFunctionApps\src\AzureFunctionApps.Shared.Validation\obj\Debug\net6.0\ref\AzureFunctionApps.Shared.Validation.dll

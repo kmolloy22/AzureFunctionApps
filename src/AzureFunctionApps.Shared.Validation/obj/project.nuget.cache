@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "aZoQ8Nm1MH7FmSD7m5Govy1/5tNFoK0M+j8ivMH2U7VLD325ZdoiiIGXmRfucX6oiX1T3SnWlMcE2dutozx3QA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kvmo\\Downloads\\Code\\my_projects\\azure\\AzureFunctionApps\\src\\AzureFunctionApps.Shared.Validation\\AzureFunctionApps.Shared.Validation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kvmo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.1.0\\microsoft.aspnetcore.http.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\kvmo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.0\\microsoft.aspnetcore.http.features.2.1.0.nupkg.sha512",
+    "C:\\Users\\kvmo\\.nuget\\packages\\microsoft.extensions.primitives\\2.1.0\\microsoft.extensions.primitives.2.1.0.nupkg.sha512",
+    "C:\\Users\\kvmo\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\kvmo\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
+    "C:\\Users\\kvmo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\kvmo\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
