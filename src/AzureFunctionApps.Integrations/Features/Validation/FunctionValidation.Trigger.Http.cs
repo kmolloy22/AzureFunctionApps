@@ -1,5 +1,5 @@
-using AzureFunctionApps.Validation.Models;
-using AzureFunctionApps.Validation.Shared.Validation;
+using AzureFunctionApps.Contracts.ValidationModels;
+using AzureFunctionApps.Integrations.Shared.Validation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AzureFunctionApps.Validation.Features
+namespace AzureFunctionApps.Integrations.Features.Validation
 {
     public static class FunctionValidation
     {

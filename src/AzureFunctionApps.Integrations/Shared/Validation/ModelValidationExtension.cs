@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
-namespace AzureFunctionApps.Validation.Shared.Validation
+namespace AzureFunctionApps.Integrations.Shared.Validation
 {
     public static class ModelValidationExtension
     {

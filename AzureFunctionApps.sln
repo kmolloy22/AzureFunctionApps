@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validation", "Validation", "{D7FC4AF6-098B-4CE5-B33C-A71EEB58CAAB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{08B90A5A-5985-44CA-B891-4414CD705F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionApps.Validation", "src\AzureFunctionApps.Validation\AzureFunctionApps.Validation.csproj", "{7C5AE3D3-4637-4D00-9CEF-E6C9A502F323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionApps.Contracts", "src\AzureFunctionApps.Contracts\AzureFunctionApps.Contracts.csproj", "{31FB6FEC-E498-4508-93A3-AB0B783F134C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionApps.Shared.Validation", "src\AzureFunctionApps.Shared.Validation\AzureFunctionApps.Shared.Validation.csproj", "{096734CC-349F-4669-B527-1BA2A88ED212}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionApps.Shared.FunctionApp", "src\AzureFunctionApps.Shared.FunctionApp\AzureFunctionApps.Shared.FunctionApp.csproj", "{C834B394-E59D-4150-A8B9-32E06E7C6A54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionApps.Shared.Validation", "src\AzureFunctionApps.Shared.Validation\AzureFunctionApps.Shared.Validation.csproj", "{436DD058-500C-424B-BC93-53F8C15D057B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionApps.Integrations", "src\AzureFunctionApps.Integrations\AzureFunctionApps.Integrations.csproj", "{E1D1F3F2-9508-430D-808C-128BD6F6C193}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,21 +19,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7C5AE3D3-4637-4D00-9CEF-E6C9A502F323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C5AE3D3-4637-4D00-9CEF-E6C9A502F323}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C5AE3D3-4637-4D00-9CEF-E6C9A502F323}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C5AE3D3-4637-4D00-9CEF-E6C9A502F323}.Release|Any CPU.Build.0 = Release|Any CPU
-		{096734CC-349F-4669-B527-1BA2A88ED212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{096734CC-349F-4669-B527-1BA2A88ED212}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{096734CC-349F-4669-B527-1BA2A88ED212}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{096734CC-349F-4669-B527-1BA2A88ED212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FB6FEC-E498-4508-93A3-AB0B783F134C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FB6FEC-E498-4508-93A3-AB0B783F134C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FB6FEC-E498-4508-93A3-AB0B783F134C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FB6FEC-E498-4508-93A3-AB0B783F134C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C834B394-E59D-4150-A8B9-32E06E7C6A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C834B394-E59D-4150-A8B9-32E06E7C6A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C834B394-E59D-4150-A8B9-32E06E7C6A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C834B394-E59D-4150-A8B9-32E06E7C6A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436DD058-500C-424B-BC93-53F8C15D057B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436DD058-500C-424B-BC93-53F8C15D057B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436DD058-500C-424B-BC93-53F8C15D057B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436DD058-500C-424B-BC93-53F8C15D057B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D1F3F2-9508-430D-808C-128BD6F6C193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D1F3F2-9508-430D-808C-128BD6F6C193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D1F3F2-9508-430D-808C-128BD6F6C193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D1F3F2-9508-430D-808C-128BD6F6C193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7C5AE3D3-4637-4D00-9CEF-E6C9A502F323} = {D7FC4AF6-098B-4CE5-B33C-A71EEB58CAAB}
-		{096734CC-349F-4669-B527-1BA2A88ED212} = {08B90A5A-5985-44CA-B891-4414CD705F00}
+		{31FB6FEC-E498-4508-93A3-AB0B783F134C} = {08B90A5A-5985-44CA-B891-4414CD705F00}
+		{C834B394-E59D-4150-A8B9-32E06E7C6A54} = {08B90A5A-5985-44CA-B891-4414CD705F00}
+		{436DD058-500C-424B-BC93-53F8C15D057B} = {08B90A5A-5985-44CA-B891-4414CD705F00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4B21226-25A0-40DD-AC36-40C436EF19A1}

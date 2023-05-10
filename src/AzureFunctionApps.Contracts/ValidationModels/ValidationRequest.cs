@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AzureFunctionApps.Validation.Models
+namespace AzureFunctionApps.Contracts.ValidationModels
 {
     public class ValidationRequest
     {

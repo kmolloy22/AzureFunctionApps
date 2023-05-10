@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
@@ -8,6 +8,8 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AzureFunctionApps.Contracts\AzureFunctionApps.Contracts.csproj" />
+    <ProjectReference Include="..\AzureFunctionApps.Shared.FunctionApp\AzureFunctionApps.Shared.FunctionApp.csproj" />
     <ProjectReference Include="..\AzureFunctionApps.Shared.Validation\AzureFunctionApps.Shared.Validation.csproj" />
   </ItemGroup>
   <ItemGroup>
