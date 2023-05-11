@@ -23,20 +23,20 @@ namespace AzureFunctionApps.Shared.FunctionApp.Middleware.Http
 
         public async Task<HttpResponseMessage> InvokeAsync(HttpRequest request)
         {
-            var model = await request.DeserializeBodyAsync<TRequest>();
-
-            HttpResponseMessage response = null;
-
             try
             {
+                var model = await request.DeserializeBodyAsync<TRequest>();
+
+                HttpResponseMessage response = null;
+
                 response = await _handler.InvokeAsync(model);
+
+                return response;
             }
             catch (Exception ex)
             {
                 throw;
             }
-
-            return response;
         }
     }
 }
