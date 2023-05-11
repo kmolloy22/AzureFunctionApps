@@ -24,11 +24,7 @@ namespace AzureFunctionApps.Integrations.Tests.Units.Features.Middleware
         [Fact]
         public async Task Run_ThrowsException_ReturnsBadRequestResponse()
         {
-            //var ex = await Assert.ThrowsAsync<HttpRequestException>(async () => await Function.Run(null, Logger));
-
-            //_ = RandomInstance.Single<ValidationRequest>();
-
-            var response = await Function.Run(null, Logger);
+            var response = await Function.Run(HttpRequestFactory.Empty(), Logger);
             response.StatusCode.Should().Be(System.Net.HttpStatusCode.BadRequest);
         }
 
