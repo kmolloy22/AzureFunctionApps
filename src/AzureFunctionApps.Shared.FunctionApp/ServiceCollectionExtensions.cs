@@ -1,5 +1,6 @@
-﻿using AzureFunctionApps.Shared.FunctionApp.Middleware;
+﻿using AzureFunctionApps.Shared.FunctionApp.FunctionAction;
 using AzureFunctionApps.Shared.FunctionApp.Middleware.Http;
+using AzureFunctionApps.Shared.FunctionApp.Middleware.Interpretation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -7,10 +8,17 @@ namespace AzureFunctionApps.Shared.FunctionApp
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddFunctionApps(this IServiceCollection services, Assembly assembly, string source)
+        public static void AddInputInterpreter<TInput, TInputInterpreter>(this IServiceCollection services)
+            where TInputInterpreter : class, IInputHandler<TInput>
+        {
+            services.AddTransient<TInputInterpreter>();
+        }
+        
+        public static IServiceCollection AddMiddleware(this IServiceCollection services, Assembly assembly)
         {
             // Middleware
             services.AddScoped(typeof(IHttpMiddleware<,>), typeof(HttpMiddleware<,>));
+            services.AddTransient(typeof(IMiddleware<,>), typeof(Middleware<,>));
 
             AddMultipleGeneric(services, typeof(IFunctionAction<,>), ServiceLifetime.Transient, assembly);
             services.AddMultipleNonGeneric(typeof(IFunctionAction<,>), ServiceLifetime.Transient, assembly);

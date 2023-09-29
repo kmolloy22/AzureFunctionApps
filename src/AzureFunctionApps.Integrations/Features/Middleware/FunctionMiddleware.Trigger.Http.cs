@@ -1,5 +1,7 @@
 using AzureFunctionApps.Contracts.ValidationModels;
-using AzureFunctionApps.Shared.FunctionApp.Middleware.Http;
+using AzureFunctionApps.Shared.FunctionApp;
+using AzureFunctionApps.Shared.FunctionApp.FunctionAction;
+using AzureFunctionApps.Shared.FunctionApp.Middleware.Interpretation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -12,11 +14,15 @@ namespace AzureFunctionApps.Integrations.Features.Middleware
 {
     public class FunctionMiddleware
     {
-        private readonly IHttpMiddleware<ValidationRequest, FunctionMiddlewareAction> _middleware;
+        private readonly IMiddleware<HttpRequest, HttpRequestInputHandler> _middleware;
+        private readonly IFunctionAction<ValidationRequest, HttpResponseMessage> _handler;
 
-        public FunctionMiddleware(IHttpMiddleware<ValidationRequest, FunctionMiddlewareAction> middleware)
+        public FunctionMiddleware(
+            IMiddleware<HttpRequest, HttpRequestInputHandler> middleware,
+            IFunctionAction<ValidationRequest, HttpResponseMessage> handler)
         {
             _middleware = middleware;
+            _handler = handler;
         }
 
         [FunctionName("FunctionMiddleware")]
@@ -24,7 +30,7 @@ namespace AzureFunctionApps.Integrations.Features.Middleware
         {
             try
             {
-                return await _middleware.InvokeAsync(request);
+                return await _middleware.Invoke(request, _handler, log);
             }
             catch (Exception ex)
             {

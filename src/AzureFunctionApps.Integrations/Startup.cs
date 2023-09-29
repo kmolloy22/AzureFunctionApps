@@ -1,5 +1,7 @@
 ﻿using AzureFunctionApps.Integrations;
 using AzureFunctionApps.Shared.FunctionApp;
+using AzureFunctionApps.Shared.FunctionApp.Middleware.Interpretation;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,8 +13,9 @@ namespace AzureFunctionApps.Integrations
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            var source = "Integration Examples";
-            builder.Services.AddFunctionApps(typeof(Startup).Assembly, source);
+            builder.Services.AddInputInterpreter<HttpRequest, HttpRequestInputHandler>();
+
+            builder.Services.AddMiddleware(typeof(Startup).Assembly);
         }
 
         /// <summary>

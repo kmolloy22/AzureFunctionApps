@@ -1,4 +1,4 @@
-﻿namespace AzureFunctionApps.Shared.FunctionApp.Middleware
+﻿namespace AzureFunctionApps.Shared.FunctionApp.FunctionAction
 {
     public interface IFunctionAction<in TRequest, TResponse>
         where TRequest : class

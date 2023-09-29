@@ -23,5 +23,17 @@ namespace AzureFunctionApps.Shared.Kernel.Serialization
 
             return JsonConvert.SerializeObject(subject, options);
         }
+
+        public static T ToModel<T>(string json)
+        {
+            try
+            {
+                return JsonConvert.DeserializeObject<T>(json);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
