@@ -15,6 +15,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AzureFunctionApps.Shared.Kernel\AzureFunctionApps.Shared.Kernel.csproj" />
+    <ProjectReference Include="..\AzureFunctionApps.Shared.Validation\AzureFunctionApps.Shared.Validation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HttpHelpers\" />
   </ItemGroup>
 
 </Project>

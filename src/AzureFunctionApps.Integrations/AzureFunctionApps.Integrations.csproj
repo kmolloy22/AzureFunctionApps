@@ -22,7 +22,4 @@
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\GenericResponse\" />
-  </ItemGroup>
 </Project>

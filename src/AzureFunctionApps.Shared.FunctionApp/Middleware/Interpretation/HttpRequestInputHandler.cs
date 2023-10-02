@@ -6,12 +6,12 @@ namespace AzureFunctionApps.Shared.FunctionApp.Middleware.Interpretation
 {
     public class HttpRequestInputHandler : IInputHandler<HttpRequest>
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        //private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public HttpRequestInputHandler(IHttpContextAccessor httpContextAccessor)
-        {
-            _httpContextAccessor = httpContextAccessor;
-        }
+        //public HttpRequestInputHandler(IHttpContextAccessor httpContextAccessor)
+        //{
+        //    _httpContextAccessor = httpContextAccessor;
+        //}
 
         public async Task<InputHandler<TRequest>> ParseAsync<TRequest>(string handlerName, HttpRequest input) where TRequest : class
         {
